@@ -27,6 +27,9 @@ trankDF = trankDF.drop([25,51,77,103,129,155,181,207,233,259,285,311,337,366])
 kenpomDF = kenpomDF.sort_values(by=['Team'])
 trankDF = trankDF.sort_values(by=['Team'])
 
+kenpomDF.to_csv('kenpomTableSorted.csv')
+trankDF.to_csv('trankTableSorted.csv')
+
 #Convert dataframe to arrays
 rawKenPom = kenpomDF.to_numpy()
 rawtrank = trankDF.to_numpy()
