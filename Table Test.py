@@ -2,10 +2,10 @@ import pandas as pd
 import numpy as np
 
 #URLs that the table is grabbing from
-#kenpomURL = "./WebSamples/Kenpom.html#"
-#trankURL = "./WebSamples/Torvik_Last10.html#"
-kenpomURL = "file:///C:/Users/natha/Documents/Coding/WillardComposite/WebSamples/Kenpom.html#"
-trankURL = "file:///C:/Users/natha/Documents/Coding/WillardComposite/WebSamples/Torvik_Last10.html#"
+kenpomURL = '.\WebSamples\Kenpom.html'
+trankURL = '.\WebSamples\Torvik_Last10.html'
+#kenpomURL = "file:///C:/Users/natha/Documents/Coding/WillardComposite/WebSamples/Kenpom.html#"
+#trankURL = "file:///C:/Users/natha/Documents/Coding/WillardComposite/WebSamples/Torvik_Last10.html#"
 
 #Grabbing the table from the webpage and assigning header row
 kenpomTable = pd.read_html(kenpomURL, header=17)
